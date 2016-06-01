@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+p, h1, h3 {
+  font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+  color: red;
+  margin-bottom: 15px;
+  font-size: 175%;
+  text-align: center;
+}
+
+.row {
+  width: 100%;
+  padding: 10px;
+}
+
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+}
+
+.section {
+  margin: 10px;
+  padding: 20px;
+  padding-top: 40px;
+  position: relative;
+  border: 1px solid black;
+  overflow: hidden;
+  min-width: 300px;
+  min-height: 275px;
+  background-color: #f7f7f7;
+}
+
+.pizza {
+  background-color: #fbf6d9;
+  color: red;
+}
+
+.ff {
+  background-color: #fffef1;
+  color: red;
+}
+
+.fc {
+  background-color: white;
+  color: red;
+}
+
+.pizza:hover {
+  background-color: #f5e931;
+  color: red;
+}
+
+.ff:hover {
+  background-color: #ffe97d;
+  color: white;
+}
+
+.fc:hover {
+  background-color: #b34831;
+  color: black;
+}
+
+h3 {
+  display: inline-block;
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 125%;
+  width: 200px;
+  text-align: center;
+  position: absolute;
+  margin-bottom: 0px;
+  top: 10px;
+  right: -1px;
+  margin-top: -12px;
+}
