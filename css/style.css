@@ -1,49 +1,9 @@
-body {
-  font-size: 16px;
-  color: #000;
-  background-color: #87B6A7;
-  font-family: 'Raleway', sans-serif;
-}
-/** HEADER **/
-#header-nav {
-  background-color: #E3F09B;
-  border-radius: 0;
-  border: 0;
-}
-
-.navbar-brand {
-  padding-top: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-}
-
-.navbar-brand h1 { /* Restaurant name */
-  font-family: 'Raleway', sans-serif;
-  color: #F79F79;
-  font-size: 1.5em;
-  font-weight: bold;
-  text-shadow: 1px 1px 1px #222;
-  margin-top: 0;
-  margin-left: 20px;
-  margin-bottom: 0;
-  line-height: .75;
-}
-.navbar-brand a:hover, .navbar-brand a:focus {
-  text-decoration: none;
-}
-
-/* menu items */
-
 * {
   box-sizing: border-box;
 }
 
 p, h1, h3 {
   font-family: 'Raleway', sans-serif;
-}
-
-.mj {
-	padding-bottom: 10px;
 }
 
 h1 {
@@ -56,16 +16,24 @@ h1 {
 .row {
   width: 100%;
   padding: 10px;
-  margin-left: 0px;
 }
 
-.col-md-12 {
+@media (min-width: 992px) {
+  .col-lg-4 {
+    float: left;
+    width: 33.33%;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-6, .col-md-12 {
+    float: left;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
     width: 100%;
-    padding-right: 0px;
-}
-
-li {
-	background-color: #F7D08A;
+  }
 }
 
 .section {
@@ -80,6 +48,36 @@ li {
   background-color: #f7f7f7;
 }
 
+.pizza {
+  background-color: #fbf6d9;
+  color: red;
+}
+
+.ff {
+  background-color: #fffef1;
+  color: red;
+}
+
+.fc {
+  background-color: white;
+  color: red;
+}
+
+.pizza:hover {
+  background-color: #f5e931;
+  color: red;
+}
+
+.ff:hover {
+  background-color: #ffe97d;
+  color: white;
+}
+
+.fc:hover {
+  background-color: #b34831;
+  color: black;
+}
+
 h3 {
   display: inline-block;
   border: 1px solid black;
@@ -92,36 +90,4 @@ h3 {
   top: 10px;
   right: -1px;
   margin-top: -12px;
-}
-
-/* button */
-#nav-list {
-  margin-top: 10px;
-}
-#nav-list a {
-  color: #000;
-  text-align: center;
-}
-#nav-list a:hover {
-  background: #F79F79;
-}
-#nav-list a span {
-  font-size: 1.8em;
-}
-.navbar-collapse {
-	border-top: 0;
-}
-.navbar-nav {
-	margin: auto -15px;
-}
-
-.navbar-header button.navbar-toggle {
-  margin-bottom: 10px;
-}
-.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
-  border: 1px solid #5B5941;
-}
-.navbar-header button.navbar-toggle {
-  clear: both;
-  margin-top: -30px;
 }
